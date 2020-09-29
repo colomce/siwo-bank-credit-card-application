@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Siwo Bank Credit Card Application</title>
+        <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="form-container">
+         <div class="header">
+            <img src="images/siwobank.png" alt="Siwo Bank Logo" height="75px">
+            <h2>Credit Card Application Form</h2>
+         </div>
+         <p>Please fill up required fields followed by *.</p>
+         <form method="POST">
+            <h2>Personal Information</h2>
+            <div class="row">
+               <div class="col-25">
+                  <label for="fname">First Name & Middle Initial: *</label>
+               </div>
+               <div class="col-75">
+                  <div class="col-75">
+                     <input type="text" id="fname" name="firstname" placeholder="Your first name..." maxlength="32" required>
+                  </div>
+                  <div class="col-25">
+                     <input type="text" id="middleinitial" name="middleinitial" placeholder="M.I." maxlength="1" required>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="lname">Last Name: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..." maxlength="32" required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="gender">Gender: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="radio" id="male" name="gender" value="male" checked>
+                  <label for="male">Male</label></li>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label></li>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="birthday">Birthday: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="date" name="birthday" required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="maritalstatus">Marital Status: *</label>
+               </div>
+               <div class="col-75">
+                  <select id="maritalstatus" name="maritalstatus" required>
+                     <option value="single">Single</option>
+                     <option value="married">Married</option>
+                     <option value="divorced">Divorced</option>
+                     <option value="widow">Widow(er)</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="address">Address: *</label>
+               </div>
+               <div class="col-75">
+                  <textarea id="address" name="address" placeholder="Address.." style="height:100px" required></textarea>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="phone">Phone Number: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="number" id="phone" name="phone">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="email">Email Address: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="email" id="email" name="email">
+                  <sup>Email will be used to recover your online banking account.</sup>
+               </div>
+            </div>
+            <h2>Card Information</h2>
+            <div class="row">
+               <div class="col-25">
+                  <label for="nameoncard">Name on Card (Max 20 Characters): *</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="nameoncard" name="nameoncard" max 20>
+                  <sup>How would you like your name to appear on your card?</sup>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="cardtype">Card Type: *</label>
+               </div>
+               <div class="col-75">
+                  <input type="radio" id="visa" value="Visa" name="cardtype" checked>
+                  <img src="images/visa_logo.gif" alt="Visa" height="40" width="60">
+                  <input type="radio" id="mastercard" value="Mastercard" name="cardtype">
+                  <img src="images/mastercard_logo.jpg" alt="Visa" height="40" width="60">
+                  <input type="radio" id="amex" value="amex" name="cardtype">
+                  <img src="images/american_express_logo.gif" alt="American Express" height="40" width="60">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+               </div>
+               <div class="col-75">
+                  <hr>
+                  <input type="checkbox" id="iagree" name="iagree" required>
+                  I certify that the information submitted in this application is true and correct to the best of my knowledge.  
+                  I further understand that any false statements may result in denial or revocation my credit card. 
+               </div>
+            </div>
+            <div class="row">
+               <br>
+               <input type="submit" value="Apply Now">
+               <input type="reset" value="Reset">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
